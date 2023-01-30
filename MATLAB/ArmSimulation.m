@@ -32,7 +32,10 @@ t = 0:dt:2;
 qi = deg2rad([0 15 0 -30 0 -40 0]);
 qf = deg2rad([0 -20 0 0 0 -8 0]);
 qdi = deg2rad([0 0 0 0 0 0 0]);
+% Best solution in practice
 qdf = deg2rad([0 -130 0 200 0 300 0]);
+% Recommended solution from inverse differential kinematics
+% qdf = deg2rad([0.0000   88.9855    0.0000  136.0627    0.0000  302.4026   -0.0000]);
 
 [q,qd,qdd] = polynomial_trajectory(qi, qf, t, qdi, qdf);
 qfe = q(:,end);
