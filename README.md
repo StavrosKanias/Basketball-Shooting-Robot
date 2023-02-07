@@ -16,3 +16,11 @@
 2. Arduino
 
 - ServoEasing.h
+
+## Shooting movement:
+
+- Power the circuit
+- Run startup_rcv στο MATLAB to load the necessary modules
+-	Connect the Arduino to the PC via USB (Active port)
+-	Send the positionControl.ino file to Arduino.
+- Run the ArmControl.m file to make the shooting movement
