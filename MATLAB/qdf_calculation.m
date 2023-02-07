@@ -26,7 +26,6 @@ dt = 0.000001;
 % Select the final joint angle configuration of the shoot trajectory
 q = deg2rad([0 -20 0 0 0 -8 0]);
 [~,pd,quatd]=qconv(robot,q);
-od = quatd.toeul';
 eta = quatd.s;
 epsilon = quatd.v;
 % Select the gain matrices
